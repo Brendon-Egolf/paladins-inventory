@@ -3,17 +3,22 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "ide":  "gnome-terminal ; gnome-terminal -e 'nodemon ./bin/www' ; cd public/javascripts/ ; gnome-terminal -e 'webpack --progress --color --watch' ; cd ../.. ; vim -S"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
-    "jade": "~1.11.0",
+    "foundation": "latest",
+    "method-override": "latest",
+    "moment": "latest",
+    "mongoose": "latest",
     "morgan": "~1.7.0",
-    "nodemon": "latest",
     "nib": "latest",
+    "nodemon": "latest",
+    "pug": "latest",
     "serve-favicon": "~2.3.0",
     "stylus": "0.54.5"
   }
